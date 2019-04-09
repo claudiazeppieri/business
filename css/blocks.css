@@ -4,6 +4,8 @@ h3 {
 
 body {
     background-color: darkseagreen !important;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 p {
