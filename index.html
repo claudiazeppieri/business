@@ -26,11 +26,17 @@
 
     <script type="text/javascript">
         function scroll() {
+            var t = window.scrollY;
+            var recycleBin = document.getElementById("recycle-bin");
+
+            if (t >= 380) {
+                recycleBin.style.transform = "scale(2,2)";
+            }
         }
     </script>
 
 </head>
-<body>
+<body onscroll="scroll()">
 
     <div class="wrapper">
 
@@ -95,7 +101,7 @@
 
 
 <section>
-    <h3>Our Team</h3>
+    <h3 class="transition">Our Team</h3>
     <div class="row">
         <div class="column">
             <img src="images/bluegirl.jpg" alt="Vanessa Jones" title="vanessa jones" width="100%">
@@ -124,11 +130,15 @@
     </div>
 </section>
 
-<!--<section>-->
-    <!--<div class="emptyspace"></div>
-    <img src="images/recyclebin.png" id="recycle bin" alt="Recycle Bin" style="transform: scale(2,2);">
-    <div class="emptyspace"></div>
-</section>-->  <!--fix scrollfire-->
+<section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="image-container">
+            <img class="image" src="images/recyclebin.png" id="recycle-bin" alt="Recycle Bin">
+        </div>
+</section>
 
 </body>
 </html>
