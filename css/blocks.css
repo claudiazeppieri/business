@@ -47,7 +47,7 @@
 }
 
 .tint {
-    background-color: rgba(0,0,0,0.15);
+    background-color: rgba(0,0,0,0.35);
     position: absolute;
     left: 0;
     top: 0;
@@ -68,6 +68,112 @@
     padding-left: 10px;
 }
 
+.h3 {
+    text-align:center;
+}
 
+.row {
+    display: flex;
+}
 
+.column {
+    flex: 30%;
+    padding: 5px;
+}
 
+.body {
+    background-color: darkkhaki;
+}
+
+.p {
+    text-align: center;
+}
+
+.element.style{
+    transform: scale(2,2);
+}
+
+#recyclebin {
+    width: 350px;
+    margin: auto;
+        margin-top: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+    display: block;
+    transition: all .5s;
+        transition-property: all;
+        transition-duration: 0.5s;
+}
+
+.carousel-box {
+    background-color: #353535;
+    width: 1200px;
+    position: relative;
+}
+
+.div {
+    display: block;
+}
+
+#carousel-img {
+    width: 1000px;
+}
+
+#tint {
+    background-color: rgba(0,0,0,0.75);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.div {
+    display: block;
+}
+
+#tint p {
+    position: absolute;
+    top: 50%;
+    width: 1000px;
+    height: 100px;
+    line-height: 100px;
+    margin-top: -50px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: Verdana;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#carousel-controls {
+    width: 200px;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+
+.div {
+    display: block;
+}
+
+#carousel-controls img {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#carousel-controls {
+    width: 200px;
+    position: relative;
+    float: right;
+    text-align: center;
+}

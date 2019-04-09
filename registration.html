@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+
+    <!--title-->
+    <title>GreenTech - Registration</title>
+
+    <!--external links-->
+    <link rel="stylesheet" href="./css/blocks.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+
+    <!--favicon image-->
+    <link rel="shortcut icon" type="greentech.png" href="./images/greentech.png"/>
+
+    <!--bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style type="text/css">
+        h3 {
+            text-align: center;
+        }
+
+        body {
+            background-color: darkseagreen;
+        }
+
+        p {
+            text-align: center;
+        }
+     </style> <!--fix CSS-->
+
+    <style type="text/javascript">
+        var images= ["images/trees.jpg", "images/reuse.jpg", "images/action.jpg", "images/road.jpg"];
+        var index= 0;
+        var numImages = images.length;
+        var timer;
+
+        function changeImage() {
+            if(index < numImages - 1) {
+                index++;
+        } else {
+            index = 0;
+          }
+          document.getElementById("carousel-img").src = images [index];
+        }
+
+        function play () {
+            timer = setInterval(changeImage, 2000);
+            document.getElementById("tint").style.display = "none";
+        }
+
+        function pause () {
+            clearInterval(timer);
+            document.getElementById("tint").style.display = "block";
+        }
+    </style>
+    <!--either add to js or fix it-->
+</head>
+<body>
+<div class="wrapper">
+
+    <!--banner image with text-->
+    <div class="banner-img">
+        <div class="tint">
+            <div class="banner-img-caption">GreenTech</div>
+        </div>
+    </div>
+</div>
+<a name="top"></a>
+<div class="container">
+
+
+    <!--
+
+    NAVBAR
+
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">Our Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> <!--About Us tag-->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li> <!--Products tag-->
+
+                <ul class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="registration.html">Registration</a>
+                        </li> <!--Registration tag-->
+
+                        <ul class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="references.html">References</a>
+                                </li> <!--References tag-->
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Other Sites</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="https://www.recyclemyelectronics.ca/on/" target="_blank" onclick="$('#collapseOne').collapse('show');">Recycle My Electronics</a>
+                                        <a class="dropdown-item" href="http://www.greene-recycling.ca" target="_blank" onclick="$('#collapseTwo').collapse('show');">Green E-Recycling</a>
+                                        <a class="dropdown-item" href="https://habitat4home.ca/restore/e-waste/" target="_blank" onclick="$('#collapseThree').collapse('show');">Habitat for Humanity</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+    </nav>
+</div>
+<section>
+    <h3>Register Today!</h3>
+    <p>Register today so that you have exclusive access to when we release new products, and receive emails pertaining
+        to how you can help protect our Earth!</p>
+</section>
+<form>
+    <!--email address-->
+    <label for="email">Email Address</label>
+    <input type="text" name="email" id="email" /><br/>
+
+    <!--create password--> <!--figure out how to hide password-->
+    <label for="create password">Create Password</label>
+    <input type="text" name="create password" id="create password"/><br/>
+
+    <!--confirm password--> <!--figure out how to hide password-->
+    <label for="confirm password">Confirm Password</label>
+    <input type="text" name="confirm password" id="confirm password"/><br/>
+
+    <!--Submit Now-->
+    <input type="submit" name="submit" value="Submit Now!" />
+
+    <!--finish form validation-->
+</form>
+
+<div class="wrapper">
+    <div class="carousel-box" id="a">
+        <img src="images/trees.jpg" id="carousel-img">
+        <div id="tint"></div>
+        <p>PAUSED</p>
+    </div>
+    <div id="carousel-controls">
+        <img id="playBtn"  alt="Play" src="images/play.png" onclick="play();">
+        <img id="pauseBtn" alt="Pause" src="images/pause.png" onclick="pause();"
+    </div>
+</div>
+
+<script type="text/javascript">
+    play();
+</script>
+
+</body>
+</html>

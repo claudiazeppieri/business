@@ -6,12 +6,14 @@
 
     <!--title-->
     <title>
-        Green Tech - About Us
+        GreenTech - About Us
     </title>
 
-    <!--links-->
+    <!--external links-->
     <link rel="stylesheet" href="./css/blocks.css">
     <script type="text/javascript" src="./js/index.js"></script>
+
+    <!--favicon image-->
     <link rel="shortcut icon" type="greentech.png" href="./images/greentech.png"/>
 
     <!--bootstrap-->
@@ -19,36 +21,143 @@
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <script src="https://code/jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-
-    q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi^jizo"
-            crossorigin="anonymous"></script>
-    <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
-    JjSmVgyd0p3XB1rRibZUAYoIIy60rQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    <style type="text/css">
+        h3 {
+            text-align: center;
+        }
+
+        body {
+            background-color: darkseagreen;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style> <!--fix CSS-->
+
+    <style type="text/javascript">
+        function scroll() {
+
+        }
+    </style>
 
 </head>
 <body>
 
-    <div class="wrapper"
+    <div class="wrapper">
 
         <!--banner image with text-->
          <div class="banner-img">
              <div class="tint">
-                 <div class="banner-img-caption">Green Tech</div>
+                 <div class="banner-img-caption">GreenTech</div>
              </div>
          </div>
+    </div>
 
     <a name="top"></a>
     <div class="container">
 
-        
+
+        <!--
+
+        NAVBAR
+
+        -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html">Our Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!--About Us tag-->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li> <!--Products tag-->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="registration.html">Registration</a>
+                            </li> <!--Registration tag-->
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="references.html">References</a>
+                                    </li> <!--References tag-->
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Other Sites</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://www.recyclemyelectronics.ca/on/" target="_blank" onclick="$('#collapseOne').collapse('show');">Recycle My Electronics</a>
+                                            <a class="dropdown-item" href="http://www.greene-recycling.ca" target="_blank" onclick="$('#collapseTwo').collapse('show');">Green E-Recycling</a>
+                                            <a class="dropdown-item" href="https://habitat4home.ca/restore/e-waste/" target="_blank" onclick="$('#collapseThree').collapse('show');">Habitat for Humanity</a>
+                                        <!--make sure all tags are closed-->
+                                        <!--fix drop down menu-->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+        </nav>
+    </div>
+    <section>
+        <h3>General Information</h3>
+        <p>Looking to buy a cheap phone? Are you wanting to help the environment? Well, we are here to help!
+            GreenTech specializes in providing recyclable goods for those who either cannot afford to purchase a brand
+            new technological product, or for those who simply want to help the environment. We have an immense
+            amount of product, provided to us from people around the community and from various tech giants. Our
+            primary goal is to reduce the Earth's overall carbon footprint. Despite this being a small company, we
+            aim to spread awareness in helping the environment. You can either purchase a used phone, computer,
+            tablet, etc, or you can sell your own to us. Help us make the world a better place, even carrying out
+            minimal acts such as this contributes to a much greater cause!</p>
+    </section>
 
 
+    <section>
+        <h3>Our Team</h3>
+        <div class="row">
+            <div class="column">
+                <img src="images/bluegirl.jpg" alt="Vanessa Jones" title="vanessa jones" width="100%">
+                Meet Vanessa Jones, our Quality Assurance Manager. She helps establish quality regulations for our
+                products and employees. She maintains our quality standards, making sure that all of our products are of
+                the best quality, despite them being reused and recycled. She strives in improving our product quality,
+                and ensures that all employees are motivated and encouraged to work in accordance with our companies
+                beliefs: to help the environment!
+            </div>
+            <div class="column">
+                <img src="images/browndude.jpg" alt="Patrick Jones" title="patrick jones" width="100%">
+                <p>Meet Patrick Jones, our Inventory Manager! Leading a team of 10 exquisite members, Patrick receives
+                and records all of our new stock, provided to us from several tech giants, and from many members of
+                our community. He is required to oversee daily deliveries, evaluate new shipments, and provide
+                analytical reproaches of our suppliers. Furthermore, he monitors and reports on our company's inventory
+                levels.</p>
+            </div>
+            <div class="column">
+                <img src="images/pinkgirl.jpg" alt="Jessica Jones" title="jessica jones" width="100%">
+                <p>Meet Jessica Jones, our Director of Finance. She is responsible for overseeing the financial
+                operations and planning of our company. She assesses our financial markets, provides solutions to
+                financial problems, and prepares reports. Her main goal is to provide the best path of growth for our
+                business.</p>
+            </div>
 
+        </div>
+    </section>
 
+    <section>
+        <!--<div class="emptyspace"></div>
+        <img src="images/recyclebin.png" id="recycle bin" alt="Recycle Bin" style="transform: scale(2,2);">
+        <div class="emptyspace"></div>
+    </section>-->  <!--fix scrollfire-->
 
+   <!--bootstrap-->
+    <script src="https://code/jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-
+        q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi^jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+        JjSmVgyd0p3XB1rRibZUAYoIIy60rQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
