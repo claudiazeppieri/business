@@ -22,20 +22,7 @@
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <style type="text/css">
-        h3 {
-            text-align: center;
-        }
-
-        body {
-            background-color: darkseagreen;
-        }
-
-        p {
-            text-align: center;
-        }
-     </style> <!--fix CSS-->
-
+    <!--Carousel-->
     <script type="text/javascript">
         var images = ["images/trees.jpg", "images/reuse.jpg", "images/action.jpg", "images/road.jpg"];
         var index = 0;
@@ -52,7 +39,7 @@
         }
 
         function play() {
-            timer = setInterval(changeImage, 3000);
+            timer = setInterval(changeImage, 2000);
             document.getElementById("tint").style.display = "none";
         }
 
@@ -61,7 +48,6 @@
             document.getElementById("tint").style.display = "block";
         }
     </script>
-    <!--either add to js or fix it-->
 </head>
 <body>
 <div class="wrapper">
@@ -122,18 +108,17 @@
     <label for="email">Email Address:  </label>
     <input type="text" name="email" id="email" /><br/>
 
-    <!--create password--> <!--figure out how to hide password-->
+    <!--create password-->
     <label for="password">Create Password:</label>
     <input type="password" name="create password" id="password"/><br/>
 
-    <!--confirm password--> <!--figure out how to hide password-->
+    <!--confirm password-->
     <label for="confirm-password">Confirm Password:</label>
     <input type="password" name="confirm password" id="confirm-password"/><br/>
 
     <!--Submit Now-->
     <input type="submit" name="submit" value="Submit Now!" onclick="performValidation()"/>
 
-    <!--finish form validation-->
 </form>
 
 <div class="wrapper">

@@ -117,7 +117,9 @@ p {
     display: block;
     transition: all .5s;
         transition-property: all;
-        transition-duration: 0.5s;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 2s;
 }
 
 .carousel-box {
@@ -203,11 +205,14 @@ p {
 }
 
 .center {
-    text-align: left;
-    padding-left: 250px;
+    text-align: center;
 }
 
 .transition:hover {
     font-size: 100px;
     transition: font-size;
+}
+
+h4 {
+    text-align: center !important;
 }
